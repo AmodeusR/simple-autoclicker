@@ -3,21 +3,6 @@ revision = 1
 requires-python = ">=3.13"
 
 [[package]]
-name = "autoclicker"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "keyboard" },
-    { name = "pyautogui" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "keyboard", specifier = ">=0.13.5" },
-    { name = "pyautogui", specifier = ">=0.9.54" },
-]
-
-[[package]]
 name = "keyboard"
 version = "0.13.5"
 source = { registry = "https://pypi.org/simple" }
@@ -2504,4 +2489,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d3/13/586c9baa985eae0f718029506b40ca41295d51a546567414b2bcf8ccacef/rubicon_objc-0.5.0.tar.gz", hash = "sha256:18f075649780d95df53d483642068c767d7d2cfbbf075ddef124a44b40b6d92e", size = 173652 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6d/30/5b2407b8762ed882e5732e19c485b9ea2f07d35462615a3212638bab66c2/rubicon_objc-0.5.0-py3-none-any.whl", hash = "sha256:a9c2a605120d6e5be327d3f42a71b60963125987e116f51846757b5e110854fa", size = 62711 },
+]
+
+[[package]]
+name = "simple-autoclicker"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "keyboard" },
+    { name = "pyautogui" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "keyboard", specifier = ">=0.13.5" },
+    { name = "pyautogui", specifier = ">=0.9.54" },
 ]
